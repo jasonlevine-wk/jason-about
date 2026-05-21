@@ -132,7 +132,7 @@ const CONTENT = {
   ],
 
   bands: [
-    { artist: "New Order", song: "Blue Monday", spotifyQuery: "New Order Blue Monday" },
+    { artist: "New Order", song: "Bizarre Love Triangle", spotifyQuery: "New Order Bizarre Love Triangle" },
     { artist: "Joy Division", song: "Love Will Tear Us Apart", spotifyQuery: "Joy Division Love Will Tear Us Apart" },
     { artist: "Arcade Fire", song: "After Life", spotifyQuery: "Arcade Fire After Life" },
     { artist: "Clairo", song: "Sofia", spotifyQuery: "Clairo Sofia" },
