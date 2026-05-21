@@ -1,0 +1,12 @@
+# AWS Amplify Hosting — static HTML/CSS/JS at repo root (no bundler).
+# https://docs.aws.amazon.com/amplify/latest/userguide/build-settings.html
+version: 1
+frontend:
+  phases:
+    build:
+      commands:
+        - echo "Static site — publishing repo root as artifacts"
+  artifacts:
+    baseDirectory: /
+    files:
+      - "**/*"

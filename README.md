@@ -47,3 +47,15 @@ All long-form copy lives in **`app.js`** (`CONTENT` object) so you can edit mile
 ## GitHub
 
 Step-by-step **`git init`**, **`git push`**, and optional **GitHub Pages**: see **[PUBLISH.md](./PUBLISH.md)**.
+
+## AWS Amplify Hosting
+
+This repo includes **`amplify.yml`** so Amplify can deploy the site from Git with **no build step** (artifacts are the files at the repository root).
+
+1. In the AWS console, open **Amplify** → **Create new app** → **Host web app** (or **Deploy without Git** if you prefer ZIP upload; Git is easier for ongoing edits).
+2. Connect **GitHub**, authorize the Amplify GitHub App for your account/org, then choose this repository and branch **`main`**.
+3. On the review screen, confirm Amplify detected **`amplify.yml`** (or set **Build settings** to use it). App name and environment name are up to you.
+4. **Save and deploy**. After the first build finishes, Amplify shows a **`*.amplifyapp.com`** URL.
+5. **Custom domain (optional):** In the Amplify app → **Hosting** → **Custom domains**, attach a domain; ACM certificates and Route 53 records are guided in the wizard.
+
+Each push to **`main`** triggers a new deployment. Costs are typically low for a small static site (see AWS Amplify pricing for your region).
