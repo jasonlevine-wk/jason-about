@@ -678,7 +678,7 @@ function onTruthPick(btn) {
     const fb = document.getElementById("truth-feedback");
     fb.style.display = "block";
     fb.textContent =
-      "Nice detective work — you spotted the lie. (I have never been a competitive surfer; I just admire people who can stand on boards.)";
+      "Nice detective work — you spotted the lie. (I have never been a competitive surfer; but I did grow up in Huntington Beach, CA where we would surf between Lunch and sixth period in high school.)";
   } else {
     all().forEach((b) => {
       b.disabled = true;
