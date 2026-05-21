@@ -15,7 +15,7 @@ const CONTENT = {
   slackDmLink: null,
 
   /** Preferred file if present (also listed first in candidates below) */
-  profileImage: "profile.jpg",
+  profileImage: "profile.png",
   /** Tried in order until one loads — keep your file next to index.html or add paths here */
   profileImageCandidates: [
     "./profile.jpg",
@@ -29,7 +29,7 @@ const CONTENT = {
     "images/profile.png",
   ],
   /** Shown when the user picks Simon Templar in the Volvo quiz — save your still as this file next to index.html */
-  saintRevealImage: "the-saint.jpg",
+  saintRevealImage: "templer.jpg",
 
   cosmicNote:
     "Born Oct 14, 1971 · 8:00 PM · Santa Monica, CA. Sun + Moon follow that date and time (Moon is commonly Leo for this window—chart sites agree in spirit if not to the minute). Rising sign is a playful placeholder until you paste your own Ascendant from a full chart calculator.",
@@ -237,8 +237,8 @@ function render() {
       <p class="title">${esc(CONTENT.titleLine)}</p>
       <p class="bio">${esc(CONTENT.bio)}</p>
       <div class="hero-btn-row">
-        <a class="btn btn-ghost" href="${esc(CONTENT.linkedInUrl)}" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="btn btn-ghost" href="${esc(CONTENT.portfolioUrl)}" target="_blank" rel="noopener">My portfolio</a>
+        <a class="btn btn-primary" href="${esc(CONTENT.linkedInUrl)}" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn btn-primary" href="${esc(CONTENT.portfolioUrl)}" target="_blank" rel="noopener">My portfolio</a>
       </div>
     </header>
 

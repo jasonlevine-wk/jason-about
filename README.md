@@ -15,9 +15,9 @@ The hero photo is resolved by **`setupHeroAvatar()`**: it tries `profileImage` p
 
 **Still broken?** The file must live in the **same folder as `index.html`** (or add that path to `profileImageCandidates`). Prefer opening the site via a tiny local server (`python3 -m http.server`) instead of double-clicking the file — some browsers are stricter with `file://` and paths.
 
-Save your headshot as **`profile.jpg`** in this folder (next to `index.html`). It is shown in a **circle** with `object-fit: cover` (tweak `object-position` on `.hero-avatar` in `styles.css` if you want the crop tighter on your face).
+Save your headshot as **`profile.png`** in this folder (next to `index.html`). It is shown in a **circle** with `object-fit: cover` (tweak `object-position` on `.hero-avatar` in `styles.css` if you want the crop tighter on your face).
 
-Save **The Saint** still (Roger Moore with the Volvo **ST 1**) as **`the-saint.jpg`** in the same folder. It appears only when someone picks **Simon Templar** in the Volvo quiz. Paths are configurable via `profileImage` and `saintRevealImage` in `app.js`.
+Save **The Saint** still (Roger Moore with the Volvo **ST 1**) as **`templer.jpg`** in the same folder. It appears only when someone picks **Simon Templar** in the Volvo quiz. Paths are configurable via `profileImage` and `saintRevealImage` in `app.js`.
 
 ## Music previews
 

@@ -63,7 +63,7 @@ After a minute, the site will be at:
 
 ## Photos
 
-`profile.jpg` and `the-saint.jpg` are not in this repo by default. Add them before `git add` if you want them on GitHub, or keep them only on your machine and they will stay off the remote.
+`profile.png` and `templer.jpg` are not in this repo by default. Add them before `git add` if you want them on GitHub, or keep them only on your machine and they will stay off the remote.
 
 ## GitHub CLI (optional)
 
