@@ -172,6 +172,21 @@ const CONTENT = {
       },
     ],
   },
+
+  /** YouTube launch / demo clips — horizontal scroller */
+  launches: {
+    title: "See some of my launches",
+    blurb:
+      "Rapid-fire demos from my AWS years — launch films and product moments where the story had to land before anyone checked their calendar.",
+    videos: [
+      { youtubeId: "lqmc70NdtLA" },
+      { youtubeId: "NoxBqhgCfXI" },
+      { youtubeId: "l0c4EvVrqmw" },
+      { youtubeId: "oNr2-chK-bc" },
+      { youtubeId: "9iac50e5Cjk" },
+      { youtubeId: "UuTSyg44XII" },
+    ],
+  },
 };
 
 const SIGNS = [
@@ -287,6 +302,32 @@ function render() {
               <h3>${esc(m.title)}</h3>
               <p>${esc(m.text)}</p>
             </div>`
+            )
+            .join("")}
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="launches">
+      <div class="section-head"><span class="emoji">🚀</span><h2>${esc(CONTENT.launches.title)}</h2></div>
+      <div class="card launches-card">
+        <p class="game-hint launches-intro">${esc(CONTENT.launches.blurb)}</p>
+        <p class="launches-scroll-hint" aria-hidden="true">Scroll or swipe sideways for the next clip.</p>
+        <div class="launches-scroller" role="region" aria-label="Launch demo videos">
+          ${CONTENT.launches.videos
+            .map(
+              (v, i) => `
+          <div class="launch-slide">
+            <div class="yt-embed yt-embed--launch">
+              <iframe
+                src="https://www.youtube-nocookie.com/embed/${esc(v.youtubeId)}"
+                title="AWS launch demo ${i + 1}"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>`
             )
             .join("")}
         </div>
