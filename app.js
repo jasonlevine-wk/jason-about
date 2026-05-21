@@ -32,7 +32,7 @@ const CONTENT = {
   saintRevealImage: "templer.jpg",
 
   cosmicNote:
-    "Born Oct 14, 1971 · 8:00 PM · Santa Monica, CA. Sun + Moon follow that date and time (Moon is commonly Leo for this window—chart sites agree in spirit if not to the minute). Rising sign is a playful placeholder until you paste your own Ascendant from a full chart calculator.",
+    "Sun + Moon follow that date and time (Moon is commonly Leo for this window—chart sites agree in spirit if not to the minute). ",
 
   placements: [
     {
@@ -49,9 +49,9 @@ const CONTENT = {
     },
     {
       label: "Rising",
-      sign: "Gemini (placeholder)",
+      sign: "Gemini",
       sym: "♊",
-      blurb: "Swap me for your real Ascendant from a chart app — first impressions move fast with time and latitude.",
+      blurb: "First impressions move fast with time and latitude.",
     },
   ],
 
@@ -457,9 +457,6 @@ function render() {
       </div>
     </section>
 
-    <footer>
-      Built as a tiny static page — tweak <code style="color:var(--muted)">app.js</code> and ship anywhere.
-    </footer>
   `;
 
   mountBands();
